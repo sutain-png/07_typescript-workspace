@@ -72,3 +72,22 @@ tuple1 = [1, 'hello', true]
 let tuple2: [number, string] = [1, 'hello']
 tuple2 = [1, 'hello']
 // tuple2 = ['hello', 1]        
+
+
+/*
+퀴즈
+[true, 'hello'. 1]
+[false, 'hi', 1,2]
+[true, 'good' , 1,2,3]
+[false, 'bye' , 1,2,3, 숫자들..]
+
+이 모든 값을 허용할 수있는 타입은?
+
+let quiz1: [boolean, string, []] ?
+
+*/
+
+let tuple3: [boolean, string, ...number[]] = [true, 'good' , 1,2,3]
+let tuple4: [boolean, string, ...unknown[]] = [false, 'bye' , 1,2,3, 4]   // unknow 추천
+
+
